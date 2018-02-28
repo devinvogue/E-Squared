@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head> 
+<title>Contact page</title>
+<style>
+
+
+	body{
+		font-family: Tahoma;
+		background-image:url("se/kit8.png" );
+	}
+header{
+	height: 60px;
+	border: 0px;
+}
+
+
+h1{
+	height: 20px;
+	margin:0px 0px 7px 0px;
+	padding:10px;
+	color: white;
+	text-align: center;
+}
+nav{
+
+	background: white;
+	padding: 15px 0px 15px 0px;
+	text-align: center;
+}
+nav li{
+	list-style: none;
+	display: inline;
+	font-size: 20px;
+
+}
+nav li a{
+	color: blue;
+	margin: 18px;
+	text-decoration: none;
+}
+
+
+#fill_form{
+background:powderblue;
+width: 40%;
+	margin: 20px auto;
+	padding: 20px;
+}
+
+input{
+	padding: 8px;
+	width: 85%;
+
+}
+
+textarea{
+	width: 85%;
+	height: 158px;
+	padding-left: 12px;
+
+}
+input [type="submit"] {
+	font-size: 1px;
+	margin-left: 18px;
+	padding:12px;
+}
+
+button{
+	margin: 15px;
+	color: white;
+	background: white;
+	width: 150px;
+	padding: 9px;
+	border-radius: 7px 7px;
+	
+}
+
+.phoneNumber,.mail,.address{
+	text-align: center;
+}
+
+.phoneNumber:hover{
+	background:yellow;
+	color: orange;
+
+}
+.address:hover{
+	background: orange;
+	color: blue;
+
+}
+.mail:hover{
+	background: deeppink;
+	color: white;
+
+}
+
+#logo{
+float :left
+}
+
+#cart{
+float :right
+}
+
+.footer{
+	background-color: black;
+	border-left: 10px purple;
+	border-bottom: 3px purple;
+	width: 97%;
+	height: 100px;
+	padding-top: 20px;
+	margin: 20px;
+	text-align: center;
+}
+
+</style>
+	<script type="text/javascript" src="jquery-latest.js"></script>
+</head>
+<body>
+
+<nav>
+	<img id="logo" src="se/logo2.png" width="120px" height="60px">
+	<img id="cart" src="se/logo3.png" width="120px" height="50px">
+		<ul>
+			<li> <a href="index.html" title="HomePage" class="menu"><font color="black">Home</font></a></li>
+			<li> <a href="About Us.html" title="About Us" class="menu"><font color="black">About us</font></a></li>
+			<li> <a href="store1.html" title="Store" class="menu"><font color="black">Store</font></a></li>
+			<li> <a href="blog.html" title="Blog" class="menu"><font color="black">Blog</font></a></li>
+			<li> <a href="Contactpage.html" title="Contactpge" class="menu"><font color="black">Contact Us</font></a></li>
+			
+
+		</ul>
+	</nav>
+<br>
+<br>
+<h1 align= "center" >Contact Us  </h1>
+<button onclick="toggle('fill_form');"><font color="black">Click to Hide FORM</font></button>
+<form action="" method="Post" id="fill_form">
+<p>Please fill the form to contact us!</p>
+First Name: <br><input type="text" name="firstName"  placeholder="Enter First Name"> <br><br>
+Last Name: <br><input type="text" name="lastName" placeholder="Enter Last Name"><br><br>
+Email <br><input type="text" name="email" name="" placeholder="Enter Email"> <br><br>
+Phone Number <br> <input type="text" name="phoneNumber"  placeholder="Enter Phone Number"><br><br>
+
+Message: <br><br>
+<textarea name="message"  cols="180" rows="50" placeholder="Please, Enter your message here!"></textarea> <br><br>
+<div class="container">
+<input type="submit" value="Submit">
+
+</div>
+</form>
+
+
+
+<table  width="98%" height="100" align="center" border="1em">
+
+<tr>
+	<td class="phoneNumber">
+		<p><b><font color="white"> +233 0541 174 278 </font></b></p>
+		<p><b><font color="white"> +233 548 120 185 </font></b> </p>
+		</td>
+	<td class="address">
+		<p><b><font color="white">Tesano Gardens Accra <br> Block 25, <br>P.O.Box. 111. </b></font></p>
+	</td>
+
+	<td class="mail">
+ 		<p><b><font color="white">ShopGroceries@gmail.com</font></p>
+		<p><b><font color="white">shopgroceries@facebook.com</b></font></p>
+	</td>
+</tr>
+</table>
+<script type="text/javascript">
+
+
+$('form').submit(printDetails);
+function printDetails(e) {
+    e.preventDefault();
+    var obj = {
+        firstname:$('input[name=firstName]').val(),
+        lastname:$('input[name=lastName]').val(),
+        mail:$('input[name=email]').val(),
+        phone:$('input[name=phoneNumber]').val(),
+        message:$('textarea[name=message]').val()
+	}
+
+	console.log(obj);
+	$('#fill_form').get(0).reset();
+	
+
+}
+        function toggle(id){
+            var forms = document.getElementById(id);
+            if (forms.style.display =='none')
+                forms.style.display ='block';
+            else
+                forms.style.display='none';
+				
+        }
+		
+
+</script>
+<div class="footer">
+<div id="icon">
+<img src="se/fb1.png"width="120px" height="50px" >
+<img src="se/icon3.png"width="120px" height="50px" >
+<img src="se/icon4.png"width="120px" height="50px" >
+<img src="se/icon2.jpg" width="120px" height="50px">
+<img src="se/icon1.jpg" width="120px" height="50px">
+<img src="se/link.png" width="120px" height="50px">
+
+	<p style="vertical-align: center;"><font color="white">&copy; Copyright 2018 - Esther & Eunice</font></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shop Grocery - HomePage</title>
+<style>
+
+body{
+
+	margin: 0px;
+	width: 100%;
+	font-family: Tahoma;
+	background-image:url("se/kit8.png" )
+}
+
+header{
+	height: 60px;
+	border:0px;
+}
+
+
+h1{
+	height: 20px;
+	margin:0px;
+	padding: 10px;
+	color:white;
+	text-align: center;
+}
+nav{
+	height: 40px;
+	background:white;
+	padding: 15px 0px 15px 0px;
+	text-align: center;
+}
+nav li{
+	list-style: none;
+	display: inline;
+	font-size: 20px;
+
+}
+nav li a{
+	color: solid black;
+	margin: 18px;
+	text-decoration: none;
+}
+
+
+
+
+.view ul{
+	list-style:none;
+	width:8640px;
+	height:100%;
+	margin:0px;
+}
+
+.wheel{
+	width:1300px;
+	height:450px;
+	border-top:0px;
+	border-bottom:0px;
+	margin:0px;
+	padding:1px 0px 1px 0px;
+}
+
+.view{
+	width:1300px;
+	height:450px;
+	overflow:hidden;
+	margin:0px;
+	padding:0px;
+}
+
+.view ul  li{
+	margin:0px;
+	padding:0px;
+	float:left;
+	list-style:none;
+}
+
+ul li img{
+	width:1300px;
+	height:450px;
+	display:inline;
+	
+	
+}
+
+.box{
+	width: 25%;
+	height: 620px;
+	float: left;
+	border:1px solid #999999;
+	background-color:gray;
+	margin-left: 30px;
+	
+}
+
+
+.box ul{
+
+	list-style: none;
+	padding-left: 0;
+
+}
+.box ul li{
+	text-align:left;
+	padding: 8px;
+
+}
+
+.box ul li:hover{
+cursor: pointer;
+	background-color:#f9f9f9;
+}
+.box ul li:nth-child(odd){
+background-color: #f9f9f9;
+
+}
+.box ul li a{
+		text-decoration: none;
+		font-size: 20px;
+		color: #444444;
+}
+
+h3{
+	text-align: center;
+	color:white;
+
+}
+.maincontainer{
+	width: 70%;
+	height: 640px;
+	border: 1px solid black;
+	float: left;
+	display: block;
+	margin-left: 5px;
+
+}
+
+
+.prod{
+
+	float: left;
+	width: 30%;
+	height: 250px;
+	margin:0px 0px 15px 25px;
+}
+
+.prod:hover{
+	background-color: #87ceeb;
+}
+.prod img{
+	height:220px;
+	width: 270px;
+	margin-left:7px;
+}
+.prod p{
+margin-top: 5px;
+	width: 100%;
+ }
+
+
+.newprods{
+	width: 100%;
+	height: 300px;
+
+	clear: both;
+	padding: 0px 90px 0px 90px;
+}
+
+
+.item{
+	width:200px;
+	float: left;
+	margin-left: 20px;
+	color:#000000;
+}
+
+.newprods ul{
+	list-style: none;
+}
+
+.newprods img{
+	height: 180px;
+	width: 200px;
+
+}
+span{
+	border: 1px solid #7716e1;
+	position: relative;
+	padding: 12px;
+	border-radius: 12px 12px;
+	top:-150px;
+	background-color: #7716e1;
+	color: white;
+
+	display: none;
+}
+
+.prod:hover span{
+	display: inline;
+	cursor: pointer;
+}
+
+.footer{
+	background-color: black;
+	border-left: 10px purple;
+	border-bottom: 3px purple;
+	width: 97%;
+	height: 100px;
+	padding-top: 20px;
+	margin: 20px;
+	text-align: center;
+}
+
+#logo{
+float :left
+}
+
+#icon{
+display: inline;
+align:center;
+}
+
+#cart{
+float :right
+}
+
+
+</style>
+
+</head>
+
+<body>
+<header>
+	<h1>ShopGrocery</h1>
+</header>
+	<nav>
+	<img id="logo" src="se/logo2.png" width="120px" height="50px">
+	<img id="cart" src="se/logo3.png" width="120px" height="50px">
+		<ul>
+			<li> <a href="index.html" title="HomePage" class="menu"><font color="black">Home</font></a></li>
+			<li> <a href="About Us.html" title="About Us" class="menu"><font color="black">About us</font></a></li>
+			<li> <a href="store1.html" title="Store" class="menu"><font color="black">Store</font></a></li>
+			<li> <a href="blog.html" title="Blog" class="menu"><font color="black">Blog</font></a></li>
+			<li> <a href="Contactpage.html" title="Contactpge" class="menu"><font color="black">Contact Us</font></a></li>
+			
+
+		</ul>
+	</nav>
+
+<div class="wheel">
+	<div class="view">
+		<ul >
+		     <li><img src="se/store.jpg" width="100%"  height="50%"id="view" ></li>
+		    <li><img src="se/back.png" width="100%" height="50%"id="view" ></li>
+			<li><img src="se/group.png"width="100%" height="50%" id="view" ></li>
+			<li><img src="se/tom.png" width="100%" height="50%" id="view" ></li>
+			<li><img src="se/sisi.png" width="100%"  height="50%"id="view" ></li>
+			<li><img src="se/fish.png" width="100%" height="50%"id="view" ></li>
+			
+
+		</ul>
+	</div>
+
+</div>
+
+
+
+<div class="box">
+	<h3 > <font color="white">CATERGORIES</font></h3>
+	<ul>
+	<li><a href="#">BREAD AND BERKERY</a></li>
+	<li><a href="#">FROZEN FOODS</a></li>
+	<li><a href="#">PET FOOD</a></li>
+	<li><a href="#">BEVERAGES</a></li>
+	<li><a href="#">VEGGETABLE</a></li>
+	<li><a href="#">OIL</a></li>
+	<li><a href="#">WATER</a></li>
+	<li><a href="#">RICE</a></li>
+	<li><a href="#">CANNED FOODS</a></li>
+	</ul>
+</div>
+<div class="maincontainer">
+	<h1 id="p1">Hello, Welcome to Shop Grocery</h1>
+	<script>
+			document.getElementById('p1').style.textAlign="center";
+			document.getElementById('p1').style.color="lue";
+	</script>
+	<br>
+
+		<div class="prod"><img src="se/num12.png" ><br><p align="center"><b><font color="white">GH¢ 10.00 <span >Buy</span></font></p></div>
+		<div class="prod"><img src="se/shirim.png" ><p align="center"><b><font color="white"> GH¢ 20.00 <span >Buy</span></b></font></p></div>
+		<div class="prod"><img src="se/num16.png" ><p align="center"><b><font color="white">GH¢ 30.00 <span >Buy</span> </b></font></p></div>
+		<div class="prod"><img src="se/num4.png"><p align="center"><b><font color="white">GH¢ 40.00 <span >Buy</span></b></font></p></div>
+		<div class="prod"><img src="se/fish1.png" ><p align="center"><b><font color="white">GH¢50.00<span >Buy</span> </b></font></p></div>
+		<div class="prod"><img src="se/num5.png" ><p align="center"><b><font color="white">GH¢ 60.00 <span >Buy</span></b></font></p></div>
+</div>
+
+
+<h3 id="new">Hot 0ffers</h3>
+<div class="newprods">
+
+<ul id="slide">
+	<marquee>
+		<li class="item">
+			<img src="se/cab.jpg">
+			<p><font color="white">flash sales</font></p>
+		</li>
+
+		<li class="item">
+			<img src="se/esta2.png" >
+			<p><font color="white">Hot sales</font></p>
+		</li>
+		<li class="item">
+			<img src="se/eggs1.png">
+			<p><font color="white">30% Discount</font></p>
+		</li>
+		<li class="item">
+			<img src="se/feel.png" >
+			<p><font color="white">60% Discount</font></p>
+		</li>
+	<li class="item">
+		<img src="se/fruit.png" >
+		<p><font color="white">5% discount</font></p>
+	</li>
+	
+	</marquee>
+</ul>
+
+</div>
+
+
+
+<table border="1" width="97%" height="300" align="center" margin-left="20px">
+	<tr>
+		<td id="info"><h1><b>INFORMATION</b></h1></td>
+		<script>
+			document.getElementById('info').style.background="solid black";
+			document.getElementById('info').style.onclick="white";
+		</script>
+		<td id="fol"><h1><b>FOLLOW US</b></h1></td>
+		<script>
+			document.getElementById('fol').style.background="solid black";
+		</script>
+		<td id="why"><h1><b>WHY BUY FROM US</b></h1></td>
+		<script>
+			document.getElementById('why').style.background="solid black";
+		</script>
+		<td id="contact"><h1><b>CONTACT US</b></h1></td>
+		<script>
+			document.getElementById('contact').style.background="solid black";
+		</script>
+	</tr>
+
+</table>
+
+<div class="footer">
+<div id="icon">
+<img src="se/fb1.png"width="120px" height="50px" >
+<img src="se/icon3.png"width="120px" height="50px" >
+<img src="se/icon4.png"width="120px" height="50px" >
+<img src="se/icon2.jpg" width="120px" height="50px">
+<img src="se/icon1.jpg" width="120px" height="50px">
+<img src="se/link.png" width="120px" height="50px">
+
+	<p style="vertical-align: center;"><font color="white">&copy; Copyright 2018 - Esther & Eunice</font></p>
+</div>
+<script type="text/javascript" src="jquery-latest.js"></script>
+<script  type="text/javascript"  src="slide.js"></script>
+
+
+</body>
+</html>
